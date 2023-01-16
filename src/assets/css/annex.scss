@@ -1,0 +1,1300 @@
+@import "./variables/variables.scss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.woff2") format("woff2"),
+    url("../fonts/Inter-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Light.woff2") format("woff2"),
+    url("../fonts/Inter-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+body {
+  font-family: "Inter";
+  font-size: 18px;
+  background-color: $body-bg-color;
+  font-weight: 400;
+  color: $white;
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 38px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 28px;
+}
+h6 {
+  font-size: 26px;
+}
+.custom-container {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+.wrapper {
+  position: relative;
+}
+#tsparticles {
+  .tsparticles-canvas-el {
+    z-index: -1 !important;
+    height: 12% !important;
+    position: absolute !important;
+  }
+}
+//header
+#header {
+  margin-bottom: 150px;
+  .nav-link {
+    color: $white;
+    margin-right: 36px;
+    line-height: 34.5px;
+    font-weight: 400;
+  }
+  .nav-link:hover {
+    color: #ff9d2d;
+  }
+  .white-paper {
+    padding: 12px 27px;
+    border-radius: 34px;
+    background-color: $white;
+    color: $white-paper;
+    border: 2px solid $white;
+  }
+  .white-paper:hover {
+    background: transparent;
+    color: $white;
+  }
+  .navbar {
+    padding-top: 44.5px;
+  }
+}
+.btn-primary:focus{
+  box-shadow: none !important;
+}
+//banner
+#banner {
+  margin-bottom: 150px;
+  .text-content {
+    padding-top: 75px;
+  }
+  
+  .banner-body-wrapper {
+    h2 {
+      font-weight: 300;
+      line-height: 45px;
+      margin-bottom: 20px;
+      background-image: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        #8f3f88 100%
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+    h1 {
+      color: $white;
+      line-height: 60px;
+      margin-bottom: 35px;
+    }
+    h5 {
+      line-height: 51px;
+      color: $white;
+      margin-bottom: 52px;
+    }
+    .banner-btn button {
+      font-weight: 500;
+      position: relative;
+      line-height: 36px;
+      padding: 14px 37px;
+      font-size: 24px;
+      border: none;
+      background-image: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        #8f3f88 100%
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+    .banner-btn button:hover{
+      opacity: 0.5;
+    }
+    .banner-btn {
+      width: 38%;
+      position: relative;
+      background-color: $body-bg-color;
+      border-radius: 34px;
+      border: 3px solid transparent;
+    }
+    .banner-btn::after {
+      background: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        #8f3f88 100%
+      );
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      z-index: -1;
+      border-radius: 34px;
+    }
+  }
+}
+//decentralizedtradingprotocol
+#decentralizedtradingprotocol {
+  margin-bottom: 170px;
+  .hr-line {
+    margin-bottom: 11px;
+    img {
+      height: 3px;
+      width: 106px;
+    }
+  }
+  h3 {
+    color: $white;
+    line-height: 55px;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-bottom: 83px;
+  }
+  .protocol-wrapper {
+    .protocol-img {
+      margin-bottom: 30px;
+    }
+    .protocol-content {
+      p:nth-child(1) {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        margin-bottom: 21px;
+        color: $white;
+      }
+      p:nth-child(2) {
+        opacity: 0.8;
+        line-height: 28px;
+        color: $white;
+        max-width: 292px;
+      }
+    }
+  }
+}
+//our-coin
+#our-coin {
+  margin-bottom: 200px;
+  p:nth-child(1) {
+    font-weight: 300;
+    line-height: 45px;
+    text-align: center;
+    background-image: radial-gradient(
+      99.67% 1137.19% at -5.59% 88.89%,
+      #ff9d2d 0%,
+      #8f3f88 100%
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 0;
+  }
+  h3 {
+    font-weight: 400;
+    line-height: 55px;
+    color: $white;
+    opacity: 0.7;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .our-coin-para {
+    text-align: center;
+    font-weight: 400;
+    line-height: 28px;
+    color: $white;
+    opacity: 0.8;
+    margin-bottom: 95px;
+  }
+  .our-coin-wrapper {
+    h6 {
+      line-height: 44px;
+      font-weight: 400;
+      color: $white;
+      margin-bottom: 33px;
+    }
+    p {
+      color: $white;
+      opacity: 0.8;
+      line-height: 28px;
+      font-weight: 400;
+      margin-bottom: 46px;
+    }
+    .coin-details {
+      h4 {
+        color: $white;
+        line-height: 55px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 32px;
+        color: $white;
+        text-align: left;
+      }
+    }
+  }
+}
+//savings
+#savings {
+  position: relative;
+  margin-bottom: 170px;
+  .saving-text {
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 45px;
+    background-image: radial-gradient(
+      99.67% 1137.19% at -5.59% 88.89%,
+      #ff9d2d 0%,
+      #8f3f88 100%
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 0;
+  }
+  h3 {
+    font-weight: 400;
+    line-height: 55px;
+    color: $white;
+    opacity: 0.7;
+    margin-bottom: 16px;
+  }
+  .savings-para {
+    max-width: 942px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $white;
+    opacity: 0.8;
+    margin-bottom: 85px;
+  }
+  .small-para {
+    margin-left: auto;
+    font-weight: 400;
+    line-height: 28px;
+    color: $white !important;
+  }
+  .boxes {
+    .row {
+      justify-content: center;
+    }
+    .box {
+      position: relative;
+      margin-bottom: 50px;
+      background-color: #4a4057;
+      border-radius: 34px;
+      border: 3px solid transparent;
+      .box-wrapper {
+        border-radius: 34px;
+        color: white;
+        padding: 14px;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-right: 16px;
+        }
+        .box-content {
+          width: 70%;
+          .currency-name {
+            .name {
+              margin: 0;
+              line-height: 36px;
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .shortcut {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+          .percentage-name {
+            .pert {
+              margin: 0;
+              line-height: 36px;
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .per-name {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .box::after {
+      background: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        rgba(255, 255, 255, 0.13) 34.07%,
+        rgba(255, 255, 255, 0) 55.73%,
+        rgba(255, 255, 255, 0.13) 76.44%,
+        #8f3f88 100%
+      );
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      z-index: -1;
+      border-radius: 34px;
+    }
+  }
+  .animations {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    padding: 0 40px;
+  }
+  .view-more {
+    justify-content: center;
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      background-image: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        #8f3f88 100%
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      margin: 0;
+      margin-right: 5px;
+    }
+  }
+}
+#protocol {
+  margin-bottom: 250px;
+  .protocol-wrapper {
+    .protocol-text {
+      padding-top: 50px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      line-height: 45px;
+      background-image: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        #8f3f88 100%
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      margin: 0;
+      margin-bottom: 14px;
+    }
+    h3 {
+      margin-bottom: 3px;
+      font-weight: 400;
+      line-height: 55px;
+      opacity: 0.7;
+      max-width: 452px;
+    }
+    .protocol-para {
+      margin-bottom: 44px;
+      opacity: 0.8;
+      line-height: 28px;
+      font-weight: 400;
+    }
+    .launch-btn {
+      button {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        border: none;
+        background-image: radial-gradient(
+          99.67% 1137.19% at -5.59% 88.89%,
+          #ff9d2d 0%,
+          #8f3f88 100%
+        );
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+    }
+
+    .launch-btn {
+      position: relative;
+      background-color: $body-bg-color;
+      border-radius: 34px;
+      border: 3px solid transparent;
+      width: 30%;
+    }
+    .launch-btn button:hover{
+      opacity: 0.5;
+    }
+    .launch-btn::after {
+      background: radial-gradient(99.67% 1137.19% at -5.59% 88.89%, #FF9D2D 0%, #8F3F88 100%);
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      z-index: -1;
+      border-radius: 34px;
+    }
+  }
+}
+//borrow
+#borrow {
+  margin-bottom: 100px;
+  position: relative;
+  margin-bottom: 170px;
+  .borrow-text {
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 45px;
+    background-image: radial-gradient(
+      99.67% 1137.19% at -5.59% 88.89%,
+      #ff9d2d 0%,
+      #8f3f88 100%
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 55px;
+    opacity: 0.7;
+  }
+  .para-btn-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .borrow-para {
+      max-width: 800px;
+      opacity: 0.8;
+      line-height: 28px;
+    }
+    .launch-a-token button {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      border: none;
+      background-image: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        #8f3f88 100%
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+    .launch-a-token{
+      position: relative;
+      background-color: $body-bg-color;
+      border-radius: 34px;
+      border: 3px solid transparent;
+      height: 53px;
+    }
+    .launch-a-token button:hover{
+      opacity: 0.5;
+    }
+    .launch-a-token::after{
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      z-index: -1;
+      border-radius: 34px;
+      background: radial-gradient(99.67% 1137.19% at -5.59% 88.89%, #FF9D2D 0%, #8F3F88 100%);
+    }
+  }
+  .boxes {
+    .row {
+      justify-content: center;
+    }
+    .box {
+      position: relative;
+      margin-bottom: 50px;
+      background-color: #4a4057;
+      border-radius: 34px;
+      border: 3px solid transparent;
+      .box-wrapper {
+        border-radius: 34px;
+        color: white;
+        padding: 14px;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-right: 16px;
+        }
+        .box-content {
+          width: 70%;
+          .currency-name {
+            .name {
+              margin: 0;
+              line-height: 36px;
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .shortcut {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+          .percentage-name {
+            .pert {
+              margin: 0;
+              line-height: 36px;
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .per-name {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .box::after {
+      background: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        rgba(255, 255, 255, 0.13) 34.07%,
+        rgba(255, 255, 255, 0) 55.73%,
+        rgba(255, 255, 255, 0.13) 76.44%,
+        #8f3f88 100%
+      );
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      z-index: -1;
+      border-radius: 34px;
+    }
+  }
+  .animations {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+//defi-developers
+#defi-developers {
+  margin-bottom: 105px;
+  .hr-line {
+    margin-bottom: 11px;
+    img {
+      height: 3px;
+      width: 106px;
+    }
+  }
+  h3 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 55px;
+    opacity: 0.7;
+  }
+  .defi-developers-para {
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.8;
+    max-width: 834px;
+    margin-bottom: 100px;
+  }
+  .boxes {
+    .box {
+      position: relative;
+      background-color: #4a4057;
+      border-radius: 34px;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+      height: 100%;
+      .box-wrapper {
+        border-radius: 34px;
+        text-align: center;
+        .box-img {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          img {
+            position: absolute;
+            top: -82px;
+          }
+        }
+        .box-heading {
+          padding-top: 80px;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 29px;
+        }
+        .box-para {
+          font-weight: 400;
+          line-height: 28px;
+          padding-bottom: 48px;
+          margin: 0;
+        }
+      }
+    }
+    .box::after {
+      background: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        rgba(255, 255, 255, 0.13) 34.07%,
+        rgba(255, 255, 255, 0) 55.73%,
+        rgba(255, 255, 255, 0.13) 76.44%,
+        #8f3f88 100%
+      );
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      z-index: -1;
+      border-radius: 34px;
+    }
+  }
+}
+//partners
+#partners {
+  position: relative;
+  margin-bottom: 50px;
+  .hr-line {
+    margin-bottom: 16px;
+    text-align: center;
+    img {
+      height: 3px;
+      width: 106px;
+    }
+  }
+  h3 {
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 25px;
+  }
+  .partners-brands {
+    .col-lg-4 {
+      margin-bottom: 70px;
+    }
+    .brand {
+      position: relative;
+      border-radius: 34px;
+      background-color: #4a4057;
+
+      height: 157px;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+      .brand-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        h4 {
+          line-height: 44px;
+          font-weight: 700;
+          margin-left: 18px;
+        }
+        .beefy {
+          margin-left: 23px;
+        }
+      }
+    }
+    .brand::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      background: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        rgba(255, 255, 255, 0.13) 34.07%,
+        rgba(255, 255, 255, 0) 55.73%,
+        rgba(255, 255, 255, 0.13) 76.44%,
+        #8f3f88 100%
+      );
+      z-index: -1;
+      border-radius: 34px;
+    }
+  }
+  .animations {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+//markets
+#markets {
+  margin-bottom: 128px;
+  .market-container {
+    max-width: 1248px;
+    margin: 0 auto;
+  }
+  h3 {
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 50px;
+  }
+  .market-container-body {
+    position: relative;
+    border-radius: 34px;
+    background-color: #4a4057;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    padding: 46px 70px;
+  }
+  .market-container-body::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: radial-gradient(
+      99.67% 1137.19% at -5.59% 88.89%,
+      #ff9d2d 0%,
+      rgba(255, 255, 255, 0.13) 34.07%,
+      rgba(255, 255, 255, 0) 55.73%,
+      rgba(255, 255, 255, 0.13) 76.44%,
+      #8f3f88 100%
+    );
+    z-index: -1;
+    border-radius: 34px;
+  }
+  .market-price {
+    margin-bottom: 72px;
+    .dropdown {
+      // border: 1px solid $white;
+      border-radius: 34px;
+      .dropdown-toggle.nav-link {
+        color: $white;
+      }
+    }
+  }
+  .market-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .detail {
+      .detail-name {
+        line-height: 27px;
+        font-weight: 500;
+        opacity: 0.7;
+        margin-bottom: 13px;
+      }
+      .detail-value {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+//footer
+#footer {
+  background-color: #4a4057;
+  padding: 70px 0;
+  border-radius: 34px;
+  .nav-link {
+    color: $white;
+    margin-right: 36px;
+    line-height: 34.5px;
+    font-weight: 400;
+  }
+  .nav-link:hover {
+    color: #ff9d2d;
+  }
+  .white-paper {
+    padding: 12px 27px;
+    border-radius: 34px;
+    background-color: $white;
+    color: $white-paper;
+    border: 2px solid $white;
+  }
+  .white-paper:hover {
+    background: transparent;
+    color: $white;
+  }
+  .footer-line {
+    background: radial-gradient(
+      99.67% 1137.19% at -5.59% 88.89%,
+      #ff9d2d 0%,
+      rgba(255, 255, 255, 0.13) 34.07%,
+      rgba(255, 255, 255, 0) 55.73%,
+      rgba(255, 255, 255, 0.13) 76.44%,
+      #8f3f88 100%
+    );
+    height: 3px;
+    opacity: 1;
+    margin: 50px 0 0 0;
+    margin-bottom: 22px;
+  }
+  .footer-bottom {
+    p {
+      padding-left: 12px;
+    }
+  }
+}
+
+//mediaQueries
+@media (max-width: 1199.98px) {
+  #tsparticles {
+    .tsparticles-canvas-el {
+      height: 10% !important;
+    }
+  }
+  #header {
+    margin-bottom: 31px;
+  }
+  #decentralizedtradingprotocol {
+    margin-bottom: 50px;
+  }
+  #our-coin {
+    margin-bottom: 50px;
+  }
+  #savings {
+    margin-bottom: 50px;
+    .savings-para {
+      max-width: 850px;
+    }
+    .animations {
+      padding: 0;
+      bottom: 70px;
+    }
+  }
+  #borrow {
+    margin-bottom: 50px;
+    .animations {
+      padding: 0;
+    }
+    .para-btn-div{
+      display: unset !important;
+      .launch-a-token{
+        width: 23%;
+        margin-bottom: 50px;
+      }
+    }
+    
+  }
+  #banner{
+    .banner-body-wrapper .banner-btn{
+      width: 46%;
+    }
+  }
+  #protocol {
+    .protocol-wrapper .launch-btn{
+      width: 37%;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #header {
+    .white-paper {
+      width: 21%;
+    }
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("../images//Category.svg");
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+  #decentralizedtradingprotocol {
+    .custom-container {
+      text-align: center;
+    }
+    .protocol-wrapper .protocol-content p:nth-child(2) {
+      max-width: unset;
+    }
+  }
+  #defi-developers {
+    .col-lg-3.col-md-6 {
+      margin-bottom: 100px;
+    }
+  }
+  #banner {
+    .row {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .banner-btn{
+      margin: 0 auto;
+      width: 30% !important;
+    }
+  }
+  #partners {
+    .animations {
+      display: none;
+    }
+  }
+  #markets {
+    .market-details {
+      .detail {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  #borrow {
+    .animations {
+      display: none;
+    }
+    .launch-a-token {
+      width: 29% !important;
+  }
+  }
+  #savings {
+    .animations {
+      display: none;
+    }
+  }
+  #protocol{
+    .protocol-wrapper .launch-btn {
+      width: 48%;
+  }
+  }
+  #footer {
+    .navbar-toggler {
+      display: none;
+    }
+   
+      .navbar-brand {
+        width: 100%;
+        text-align: center;
+    }
+    .custom-container{
+      text-align: center;
+    }
+    }
+  
+}
+@media (max-width: 767.98px) {
+  #header {
+    position: relative;
+    .navbar-toggler {
+      position: absolute;
+      top: 85px;
+      right: 0;
+    }
+    .white-paper {
+      width: 30%;
+    }
+  }
+  #our-coin {
+    .our-coin-para {
+      margin: 0;
+    }
+    .row {
+      text-align: center;
+    }
+    .our-coin-wrapper .coin-details p {
+      text-align: center;
+    }
+  }
+  #protocol {
+    margin-bottom: 50px;
+    .row {
+      text-align: center;
+    }
+    .protocol-wrapper h3 {
+      max-width: unset;
+    }
+    .protocol-wrapper .launch-btn {
+      width: 32%;
+      margin: 0 auto;
+  }
+  }
+  #banner {
+    .banner-btn {
+      margin: 0 auto;
+      width: 40% !important;
+  }
+  }
+  #borrow {
+     .launch-a-token {
+      width: 38% !important;
+      margin: 0 auto;
+  }
+    .para-btn-div {
+      display: unset;
+      margin: 0;
+    }
+    .boxes {
+      margin-top: 30px;
+    }
+    .custom-container {
+      text-align: center;
+    }
+  }
+  #defi-developers {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #markets {
+    .market-container-body {
+      padding: 23px 40px;
+    }
+  }
+  
+}
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  h6 {
+    font-size: 24px;
+  }
+  #tsparticles {
+    .tsparticles-canvas-el {
+      height: 7% !important;
+    }
+  }
+  #header{
+    .white-paper {
+      width: 51%;
+  }
+  }
+  #banner {
+    margin-bottom: 30px;
+    .banner-body-wrapper h5 {
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+    .banner-body-wrapper .banner-btn button{
+      padding: 0;
+      font-size: 18px;
+    }
+    .banner-body-wrapper h2 {
+      margin: 0;
+    }
+    .banner-body-wrapper h1 {
+      margin: 0;
+    }
+  }
+  #decentralizedtradingprotocol {
+    margin-bottom: 0;
+    h3 {
+      margin-bottom: 10px;
+    }
+    .col-lg-4 {
+      margin-bottom: 50px;
+    }
+  }
+  #our-coin {
+    .our-coin-wrapper .coin-details p {
+      font-size: 16px;
+    }
+    .our-coin-wrapper h6 {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+  #savings {
+    .savings-para-div {
+      display: unset !important;
+    }
+    .savings-para {
+      max-width: unset;
+      margin-bottom: 0;
+    }
+    .boxes {
+      margin-top: 60px;
+    }
+  }
+  #partners {
+    .partners-brands .brand{
+      background-color: #2B2044;
+    }
+     .partners-brands .brand .brand-logo h4 {
+      line-height: 24px;
+      font-size: 17px;
+    }
+    .partners-brands {
+      position: relative;
+      border-radius: 34px;
+      background-color: #4a4057;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+      padding: 45px;
+    }
+    .partners-brands::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      background: radial-gradient(
+        99.67% 1137.19% at -5.59% 88.89%,
+        #ff9d2d 0%,
+        rgba(255, 255, 255, 0.13) 34.07%,
+        rgba(255, 255, 255, 0) 55.73%,
+        rgba(255, 255, 255, 0.13) 76.44%,
+        #8f3f88 100%
+      );
+      z-index: -1;
+      border-radius: 34px;
+    }
+
+    .partners-brands .col-lg-4 {
+      margin-bottom: 35px;
+      z-index: 9;
+    }
+    .partners-brands .brand {
+      max-width: 251px;
+      margin: 0 auto;
+    }
+    .brand-logo {
+      img {
+        width: 170px;
+      }
+    }
+    .partners-brands .brand .brand-logo .beefy {
+      margin-left: 4px;
+    }
+    .partners-brands .brand .brand-logo h4 {
+      margin-left: 6px;
+    }
+  }
+  #protocol {
+    font-size: 22px;
+    .protocol-wrapper .launch-btn{
+      width: 58%;
+    }
+  }
+  #markets {
+    .market-price {
+      display: unset !important;
+    }
+    .market-details {
+      margin-top: 30px;
+      .detail {
+        width: 100%;
+      }
+    }
+    .market-container-body {
+      text-align: center;
+    }
+    .dropdown div {
+      justify-content: center;
+    }
+  }
+  #borrow {
+    .launch-a-token{
+      width: 72% !important;
+    }
+  }
+  #footer {
+    text-align: center;
+    padding: 20px 0;
+    .navbar-brand {
+      width: 100%;
+    }
+    .footer-line {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  
+}
